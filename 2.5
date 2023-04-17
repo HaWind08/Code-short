@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int SoDien,SoTien;
+	do
+	{
+		cout << "Nhap so dien: "; cin >> SoDien;
+	} while (SoDien <= 0);
+	
+	if(SoDien <= 100)
+	{
+		SoTien = SoDien*750;
+	}
+	else if(SoDien <= 200)
+	{
+		SoTien = 100*750 + (SoDien-100)*1250;
+	}
+	else if(SoDien <= 300)
+	{
+		SoTien = 100*750 + 100*1250 + (SoDien-200)*1750;
+	}
+	else 
+	{
+		SoTien = 100*750 + 100*1250 + 100*1750 + (SoDien-300)*3000;
+	}
+	cout << "So tien phai tra la: " << SoTien;
+	return 0;
+}
