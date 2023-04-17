@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int SoTien,KhuyenMai;
+	do
+	{
+		cout << "Nhap so tien: "; cin >> SoTien;
+	} while (SoTien <= 0);
+	
+	if(SoTien < 200)
+	{
+		cout << "Khong khuyen mai";
+	}
+	else if(SoTien < 300)
+	{
+		cout << "Khuyen mai la: " << SoTien*0.2;
+	}
+	else cout << "Khuyen mai la: " << SoTien*0.3;
+	return 0;
+}
